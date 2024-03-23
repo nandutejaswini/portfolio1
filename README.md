@@ -26,9 +26,6 @@ My portfolio website serves as a platform to share my journey, expertise, and pa
 
 ## Technologies Used
 - HTML/CSS/JavaScript
-- Bootstrap (optional, if used)
-- Font Awesome (for icons)
-- [List any additional technologies or frameworks used]
 
 ## Setup and Installation
 To run this website locally or deploy it on your server, follow these steps:
