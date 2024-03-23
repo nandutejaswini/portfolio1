@@ -11,11 +11,52 @@
     align-items: center;
     padding: 50px 10%;
 }
-#about,#projects{
+#about,#projects,#socialmedia,#publications{
     padding: 50px 10%;
     background-color: #fdf0f1; 
 
 }
+#publications {
+    background-color:#fdf0f1; /* Adjust background color as needed */
+    color: #333; /* Text color */
+    padding: 50px 10%;
+}
+
+#publications h2 {
+    text-align: center;
+    
+    margin-bottom: 20px;
+}
+
+#publications ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#publications li {
+    margin-bottom: 15px;
+}
+
+#publications li strong {
+    font-size: 1.2em; /* Adjust size as needed */
+    color: #000; /* Title color */
+}
+
+#publications li p {
+    margin: 5px 0;
+}
+
+#publications a {
+    color: #0066cc; /* Link color */
+    text-decoration: none; /* Removes underline */
+}
+
+#publications a:hover,
+#publications a:focus {
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
+
 
 .intro-content {
     display: flex;
@@ -280,4 +321,24 @@ nav ul li a:hover, nav ul li a:focus {
 .job li {
     margin-bottom: 10px; /* Space out list items */
 }
+.social-media-links {
+    text-align: center;
+    margin: 20px 0;
+    background-color:#fdf0f1;
+}
+
+.social-media-links a {
+    color: #333; /* Change this to your preferred icon color */
+    margin: 0 10px;
+    font-size: 24px; /* Adjust icon size as needed */
+    display: inline-block;
+    background-color:#fdf0f1;
+}
+
+.social-media-links a:hover,
+.social-media-links a:focus {
+    color: #555; /* Change this to the hover state color */
+    text-decoration: none;
+}
+
 
