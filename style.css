@@ -1,0 +1,283 @@
+.centered-text {
+    text-align: center; /* Center the text */
+    max-width: 800px; /* Set a max-width for the content if desired */
+    margin: 0; /* Auto margins to center the block */
+    padding:  0; /* Add some padding on top and bottom */
+}
+#home,#skills {
+    background-color: #fdf0f1; /* or any color that matches your theme */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+}
+#about,#projects{
+    padding: 50px 10%;
+    background-color: #fdf0f1; 
+
+}
+
+.intro-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.intro-text {
+    flex: 1;
+    text-align: left;
+}
+
+.intro-text h1 {
+    font-size: 2rem; /* Adjust as needed */
+    color: #000; /* Your desired color */
+    margin-bottom: 0.5rem;
+}
+
+.intro-text h2 {
+    font-size: 2.5rem; /* Adjust as needed */
+    color: #000; /* Your desired color */
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    color: #333; /* Your desired color */
+}
+
+.intro-photo {
+    padding-left: 50px; /* Creates space between text and photo */
+}
+
+.intro-photo img {
+    border-radius: 50%; /* Circular photo */
+    max-width: 300px; /* Adjust as needed */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+
+#home {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Set the height of the section to fill the viewport */
+    margin: 0 ; /* Center the section if it has a specific width */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header {
+    background-color: rgba(51, 51, 51, 0.95); /* Slightly transparent */
+}
+
+nav {
+    position: fixed; /* Fixed position to stick at the top */
+    top: 0; /* Align to the top of the page */
+    left: 0; /* Align to the left side of the page */
+    width: 100%; /* The nav bar stretches across the full width of the viewport */
+    background-color: #111111; /* Your chosen background color */
+    z-index: 1000; /* Ensures the nav bar is above other page elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for depth */
+}
+
+nav ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Lays out the nav items in a row */
+    justify-content: space-around; /* Distributes space around the items */
+    align-items: center; /* Vertically aligns the nav items */
+}
+
+nav li {
+    padding: 15px 20px; /* Padding for each nav item */
+}
+
+nav a {
+    text-decoration: none; /* Removes underline from links */
+    color: #e7e0e0; /* Your chosen link text color */
+    font-weight: bold; /* Makes the link text bold */
+}
+
+/* Additional styles for the active link or on hover can be added here */
+
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+nav ul li a.active {
+    border-bottom: 2px solid #fff; /* or another highlight effect */
+}
+html {
+    scroll-behavior: smooth;
+}
+@media (max-width: 600px) {
+    nav ul {
+        display: none; /* Hide the navigation and replace with a hamburger icon */
+    }
+    /* Additional responsive styling here */
+}
+@media (max-width: 600px) {
+    footer {
+        position: relative; /* or adjust padding on the main content so it's fully visible */
+    }
+}
+nav ul li a:hover, nav ul li a:focus {
+    color: #ccc; /* Lighten the link color on hover/focus */
+}
+
+
+#skills {
+    background-color: #fdf0f1; /* Your chosen background color */
+    padding: 40px;
+    text-align: center;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#skills {
+    background-color: #fdf0f1; /* Adjust the background color to match your theme */
+    color: #333; /* Primary text color */
+    padding: 20px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-around; /* Distribute space between the skill categories */
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+}
+
+.skills-category {
+    background-color: #fff; /* White background for the skill cards */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+    border-radius: 5px; /* Slightly rounded corners for the cards */
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 30%; /* Adjust the width of each category */
+    text-align: left; /* Align the text to the left */
+}
+
+.skills-category h3 {
+    background-color: #000; /* Dark background for the category titles */
+    color: #fff; /* Light text for visibility */
+    display: inline-block; /* Only as wide as the content */
+    padding: 5px 15px; /* Padding inside the category titles */
+    margin: -20px -20px 10px -20px; /* Align the title with the card edges */
+    border-radius: 5px 5px 0 0; /* Round the top corners */
+}
+
+.skills-category ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.skills-category li {
+    margin-bottom: 5px; /* Margin between list items */
+    padding-left: 20px; /* Padding for alignment */
+    position: relative; /* To position the pseudo-element */
+}
+
+.skills-category li::before {
+    content: '•'; /* Bullet point */
+    color: #c71585; /* Custom bullet color */
+    font-weight: bold; /* Bold bullet points */
+    display: inline-block; 
+    width: 20px; /* Space for bullet point */
+    margin-left: -20px; /* Align bullet within padding */
+    position: absolute; /* Position the bullet */
+}
+
+#contact {
+    background-color:#fdf0f1; /* Your chosen background color */
+    padding: 100px;
+    text-align: center;
+}
+
+#contact .form-group {
+    margin-bottom: 15px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #000; /* Black border */
+    border-radius: 0; /* Square edges */
+    box-sizing: border-box;
+}
+
+#contact textarea {
+    height: 150px; /* Larger area for message input */
+}
+
+#contact .form-button {
+    background-color: #403232; /* White background */
+    color: #e6dada; /* Black text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact .form-button:hover {
+    background-color: #0e0e0e; /* Light pink background on hover */
+}
+
+#work-experience {
+    background-color:#fdf0f1; /* or any color that fits your design */
+    padding: 50px 10%;
+}
+
+.job h3 {
+    color: #333; /* Dark color for job title for readability */
+    margin-top: 0;
+}
+
+.job h4 {
+    color: #666; /* Lighter color for company name and location */
+    margin-bottom: 0;
+}
+
+.job p {
+    font-style: italic; /* Style for the dates */
+    margin-top: 0;
+}
+
+.job ul {
+    list-style-type: square; /* or 'disc', 'circle', etc. */
+    padding-left: 20px; /* Indent the list */
+}
+
+.job li {
+    margin-bottom: 10px; /* Space out list items */
+}
+
