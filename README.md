@@ -45,5 +45,5 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 For any inquiries or collaboration opportunities, feel free to reach out to me:
 
-- LinkedIn: https://www.linkedin.com/in/tejaswini-nandu/)https://www.linkedin.com/in/tejaswini-nandu/
+- LinkedIn: https://www.linkedin.com/in/tejaswini-nandu/
 
