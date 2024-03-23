@@ -6,7 +6,7 @@
     <title>Tejaswini Nandu's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -24,24 +24,24 @@
         
     </header>
     
-    <section id="home">
-        
-            <div class="intro-content">
-                <div class="intro-text">
-                    <h1>HELLO! THIS IS</h1>
-                    <h2>Tejaswini Nandu</h2>
-                    <p>Electrical and Computer Engineer with expertise in machine learning and IoT, merging academic research with industry experience to innovate and drive technological solutions.</p>
-                </div>
-                <div class="intro-photo">
-                    <img src="photo.jpg" alt="Tejaswini Nandu" />
-                </div>
-            </div>
-        
-        
-    </section>
-    <section id="about">
+   <!-- ... -->
+<section id="home">
+    <div class="intro-content">
+        <div class="intro-text" data-aos="fade-right" data-aos-delay="300">
+            <h1>HELLO! THIS IS</h1>
+            <h2>Tejaswini Nandu</h2>
+            <p>Electrical and Computer Engineer with expertise in machine learning and IoT, merging academic research with industry experience to innovate and drive technological solutions.</p>
+        </div>
+        <div class="intro-photo" data-aos="fade-left" data-aos-delay="300">
+            <img src="photo.jpg" alt="Tejaswini Nandu" />
+        </div>
+    </div>
+</section>
+<!-- ... -->
+
+    <section id="about" data-aos="fade-right" data-aos-delay="300">
         <h2>About Me</h2>
-        <p>Welcome to my blog! I’m Tejaswini Nandu, a current master’s student at the University of Florida, specializing in Electrical and Computer Engineering. I’m thrilled to share my knowledge, experiences, and passion for technology with you through this platform.</p>
+        <p> I’m Tejaswini Nandu, a current master’s student at the University of Florida, specializing in Electrical and Computer Engineering. I’m thrilled to share my knowledge, experiences, and passion for technology with you through this platform.</p>
         
         <p>Throughout my academic journey, I’ve had the privilege of honing my skills in various areas of the field, including mobile app development, programming languages, collaboration, and web development. My background includes valuable experiences at Accenture and as a Mobile App Development Intern, which have further expanded my expertise and exposed me to real-world challenges.</p>
         
@@ -56,7 +56,7 @@
     <section id="work-experience">
         <h2>Work Experience</h2>
         
-        <div class="job">
+        <div class="job" data-aos="fade-right" data-aos-delay="300">
             <h3>Graduate Research and Student Mentor</h3>
             <h4>University Of Florida - Gainesville, FL</h4>
             <p>Dec 2023 - Present</p>
@@ -64,65 +64,79 @@
                 <li>Developed research proposal on functional annotations of non-coding DNA utilizing GPN-MSA transformer model.</li>
                 <li>Planned annotation identification from GFF3 files, statistical analysis, and supervised machine learning.</li>
                 <li>Mentored undergraduate students in DNA language model application for genomic region annotation.</li>
+                <li>Provided guidance in model operation, experiment execution, and result analysis.</li>
             </ul>
         </div>
         
-        <div class="job">
+        <div class="job" data-aos="fade-right" data-aos-delay="600">
             <h3>Associate Software Engineer</h3>
             <h4>Accenture - Hyderabad, Telangana</h4>
             <p>July 2021 - July 2022</p>
             <ul>
-                <li>Managed incidents for BMW project, achieving 95% compliance with SLA targets.</li>
-                <li>Led root cause analysis, identified key issues, and implemented permanent solutions that decreased recurring issues by 50%.</li>
+                <li>Managed incidents for BMW project, achieving 95% compliance with SLA targets through effective problem-solving and root cause
+                    analysis, significantly reducing recurring issues by 50%.</li>
+                <li>Developed and maintained software solutions in Java and Python, utilizing SQL databases and Unix for project needs. Integrated
+                    continuous integration practices to enhance project delivery and quality.</li>
+                    <li>Received praise for initiative and problem-solving commitment, demonstrating strong communication skills and the ability to meet
+                        user requirements in a cross-functional team environment.</li>
             </ul>
         </div>
         
-        <div class="job">
+        <div class="job" data-aos="fade-right" data-aos-delay="900">
             <h3>Mobile App Development Intern</h3>
             <h4>Engineers Hub - Hyderabad, Telangana</h4>
             <p>June 2019 - July 2019</p>
             <ul>
-                <li>Designed the concept and initiated the design phase of the Hand Out mobile application aimed at reducing food waste.</li>
-                <li>Collaborated closely with the team to establish project milestones and deliverables.</li>
+                <li>Initiated and designed the Hand Out mobile application concept, leveraging Android Studio and Git for version control to reduce
+                    food waste and support orphanages, reflecting strong project management and collaboration skills.</li>
+                <li>Worked in a cross-functional team to define project milestones and deliverables, employing Agile methodologies to ensure timely
+                    and effective project execution.</li>
+                    <li>Engaged in open source communities, contributing to projects that emphasized microservices architecture and the use of Go and
+                        TypeScript for backend development.</li>
             </ul>
         </div>
     </section>
     
     
     <section id="projects">
-        <h2>My Work</h2>
+        <h2>Projects</h2>
+        <article class="project" data-aos="fade-right" data-aos-delay="300">
+            <h3>CareerApp</h3>
+            <ul>
+                <li>Developed a web application to assist users in managing their career goals, job applications, and networking opportunities.</li>
+                <li>Implemented features for user authentication, job search functionality, and personalized dashboard.</li>
+                <li>Utilized React.js for frontend development and Node.js with MongoDB for backend services.</li>
+            </ul>
+        </article>
         
-        <div class="project">
+        <article class="project" data-aos="fade-right" data-aos-delay="600">
             <h3>Brand Logo Classification</h3>
-            <p>
-                • Implemented a Convolutional Neural Network (CNN) classification system with transfer learning capabilities to categorize brand
-                logos; accuracy was enhanced by 20% and shortened classification time by 60% <br>
-                • Achieved an accuracy of 94.62% with VGG16 through hyperparameter tuning, including early stopping and the implementation of
-                Adam optimizer.
-                </p>
-        </div>
+            <ul>
+                <li>Implemented a Convolutional Neural Network (CNN) classification system with transfer learning capabilities to categorize brand logos; accuracy was enhanced by 20% and classification time was shortened by 60%.</li>
+                <li>Achieved an accuracy of 94.62% with VGG16 through hyperparameter tuning, including early stopping and the implementation of Adam optimizer.</li>
+            </ul>
+        </article>
         
-        <div class="project">
+        <article class="project" data-aos="fade-right" data-aos-delay="900">
             <h3>IoT Greenhouse Monitoring System</h3>
-            <p>• Built an automated greenhouse monitoring system using IoT technology, which resulted in an 80% reduction in human labor and a
-                30% boost in production thanks to precise and prompt alerts.<br>
-                • Deployed two sensor boards inside and outside the greenhouse to monitor real-time environmental variables like temperature and
-                humidity</p>
-        </div>
+            <ul>
+                <li>Built an automated greenhouse monitoring system using IoT technology, which resulted in an 80% reduction in human labor and a 30% boost in production thanks to precise and prompt alerts.</li>
+                <li>Deployed two sensor boards inside and outside the greenhouse to monitor real-time environmental variables like temperature and humidity.</li>
+            </ul>
+        </article>
         
-        <div class="project">
+        <article class="project" data-aos="fade-right" data-aos-delay="1200">
             <h3>THE THIRD EYE</h3>
-            <p>• Developed ”The Third Eye,” a Raspberry Pi-based smart cane for visually impaired individuals.<br>
-                • Integrated voice-based assistance, object detection, and GPS technology to enable independent travel.<br>
-                • Empowered users with real-time feedback, navigation guidance, and enhanced situational awareness.<br>
-                </p>
-        </div>
-        
-        <!-- Add more projects as needed -->
+            <ul>
+                <li>Developed "The Third Eye," a Raspberry Pi-based smart cane for visually impaired individuals.</li>
+                <li>Integrated voice-based assistance, object detection, and GPS technology to enable independent travel.</li>
+                <li>Empowered users with real-time feedback, navigation guidance, and enhanced situational awareness.</li>
+            </ul>
+        </article>
     </section>
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skills-category">
+        <div class="skills-category" data-aos="fade-right" data-aos-delay="300">
             <h3>Languages</h3>
             <ul>
                 <li>Python</li>
@@ -135,7 +149,7 @@
                 <li>VHDL</li>
             </ul>
         </div>
-        <div class="skills-category">
+        <div class="skills-category" data-aos="fade-left" data-aos-delay="300">
             <h3>Tools & Platforms</h3>
             <ul>
                 <li>AWS</li>
@@ -156,7 +170,7 @@
                 <li>Excel</li>
             </ul>
         </div>
-        <div class="skills-category">
+        <div class="skills-category" data-aos="fade-right" data-aos-delay="300">
             <h3>Frameworks/Libraries</h3>
             <ul>
                 <li>Numpy</li>
@@ -170,7 +184,7 @@
             </ul>
         </div>
     </section>
-    <section id="publications">
+    <section id="publications" data-aos="fade-right" data-aos-delay="300">
         <h2>Publications & Patents</h2>
         <ul>
             
@@ -183,9 +197,9 @@
     </section>
     
     
-    <section id="contact">
+    <section id="contact" data-aos="fade-right" data-aos-delay="300">
         <h2>Contact</h2>
-        <form action="#" method="post">
+        <form action="send.php" method="post" enctype="text/plain">
             <div class="form-group">
                 <input type="text" name="name" id="name" placeholder="Name" required>
             </div>
@@ -204,7 +218,7 @@
     
     <!-- Social Media Links -->
     <section id="socialmedia">
-        <div class="social-media-links">
+        <div class="social-media-links" data-aos="fade-right" data-aos-delay="300">
     <a href="https://www.linkedin.com/in/tejaswini-nandu/" target="_blank" title="LinkedIn">
         <i class="fab fa-linkedin-in"></i>
     </a>
@@ -213,10 +227,22 @@
     </a>
 </div>
 </section>
-    <footer>
-        <p>&copy; 2024 Tejaswini Nandu. All rights reserved.</p>
-    </footer>
+   <!-- ... -->
+<footer>
+    <p>&copy; 2024 Tejaswini Nandu. All rights reserved.</p>
+</footer>
 
-    <script src="script.js"></script>
+<!-- AOS Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+  AOS.init({
+    // You can set global AOS settings here
+    offset: 120, // offset (in px) from the original trigger point
+    duration: 1000, // values from 0 to 3000, with step 50ms
+  });
+</script>
+<!-- ... -->
+
 </body>
 </html>
