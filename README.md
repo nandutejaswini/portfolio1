@@ -29,7 +29,7 @@ My portfolio website serves as a platform to share my journey, expertise, and pa
 
 ## Setup and Installation
 To run this website locally or deploy it on your server, follow these steps:
-1. Clone this repository: `git clone [repository URL]`
+1. Clone this repository: `git clone https://github.com/nandutejaswini/portfolio`
 2. Navigate to the project directory: `cd portfolio`
 3. Open `index.html` in your web browser or deploy the files to your web server.
 
