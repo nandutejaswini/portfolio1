@@ -178,17 +178,37 @@ nav ul li a.active {
 html {
     scroll-behavior: smooth;
 }
-@media (max-width: 600px) {
-    nav ul {
-        display: none; /* Hide the navigation and replace with a hamburger icon */
+/* Styles for screens less than 600px wide */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    header {
+        padding: 10px;
     }
-    /* Additional responsive styling here */
-}
-@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+    /* Add more responsive styles as needed */
     footer {
         position: relative; /* or adjust padding on the main content so it's fully visible */
     }
 }
+/* Example media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .intro-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center; /* Center content horizontally */
+    }
+    .intro-text, .intro-photo {
+        width: 100%; /* Make intro text and photo full width on smaller screens */
+        text-align: center; /* Center text within its container */
+    }
+    /* Add more responsive styles as needed */
+}
+
+
 nav ul li a:hover, nav ul li a:focus {
     color: #ccc; /* Lighten the link color on hover/focus */
 }
