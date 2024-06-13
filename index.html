@@ -11,18 +11,24 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#work-experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#socialmedia">Socialmedia</a></li>
             </ul>
         </nav>
-        
     </header>
+    
     
    <!-- ... -->
 <section id="home">
@@ -53,6 +59,32 @@
         
         <p>Thank you for joining me on this adventure, and I look forward to sharing valuable insights and engaging with you in meaningful discussions. Let’s embark on this exciting exploration of technology together!</p>
     </section>
+    <section id="education">
+        <h2>My Education</h2>
+        <p>Education is not the learning of facts, but the training of the mind to think.</p>
+        <div class="education-container">
+            <!-- Master's Degree -->
+            <div class="education-item">
+                <img src="uf.png" alt="University of Florida">
+                <div class="education-info">
+                    <h3>Master of Science in Electrical and Computer Engineering</h3>
+                    <p>University of Florida, Gainesville, FL</p>
+                    <p>August 2022 - May 2024 | Graduated</p>
+                </div>
+            </div>
+            <!-- Bachelor's Degree -->
+            <div class="education-item">
+                <img src="gnits.png" alt="G. Narayanamma Institute of Technology and Science">
+                <div class="education-info">
+                    <h3>Bachelor of Engineering in Electronics and Communication Engineering</h3>
+                    <p>G. Narayanamma Institute of Technology and Science, Hyderabad, India</p>
+                    <p>July 2017 - July 2021 | Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
     <section id="work-experience">
         <h2>Work Experience</h2>
         
@@ -251,6 +283,7 @@
             <button type="submit" class="form-button">SEND</button>
         </form>
     </section>
+    
     
     <!-- Social Media Links -->
     <section id="socialmedia">
