@@ -62,8 +62,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto;
+     /* Adjust as needed */
+    margin: 0 ;
 }
 
 .intro-text {
@@ -103,7 +103,7 @@
 #home {
     display: flex;
     justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    align-items: center;/* Center the content vertically */
     height: 100vh; /* Set the height of the section to fill the viewport */
     margin: 0 ; /* Center the section if it has a specific width */
 }
@@ -113,26 +113,28 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
-
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #333; /* Dark background for better visibility */
+    color: #fff; /* White text color */
+    padding:  20px; /* Uniform padding around the content */
+     /* Enables flexbox layout */
+     /* Slightly transparent */
     text-align: center;
-}
-header {
-    background-color: rgba(51, 51, 51, 0.95); /* Slightly transparent */
+   /* Ensures the header spans the full width */
+    /* Subtle shadow for depth */
 }
 
 nav {
-    position: fixed; /* Fixed position to stick at the top */
     top: 0; /* Align to the top of the page */
     left: 0; /* Align to the left side of the page */
-    width: 100%; /* The nav bar stretches across the full width of the viewport */
-    background-color: #111111; /* Your chosen background color */
-    z-index: 1000; /* Ensures the nav bar is above other page elements */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for depth */
+    position: fixed;
+    width: 100%; /* Allows the left navigation to grow */
+    background-color: #111111; /* Enables flexbox layout within this div */
+     /* Aligns the "Home" link to the left */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Ensures the nav bar is above other page elements */
 }
 
 nav ul {
@@ -149,17 +151,47 @@ nav li {
 }
 
 nav a {
-    text-decoration: none; /* Removes underline from links */
-    color: #e7e0e0; /* Your chosen link text color */
-    font-weight: bold; /* Makes the link text bold */
+    text-decoration: none; /* Removes underlines from links */
+    color: #e7e0e0; /* White color for all text links */
+    /* Padding for larger clickable area */
+    font-weight: bold; /* Standard font weight */
+}
+section {
+    padding: 20px;
+}
+nav a:hover {
+    color: #c0c0c0; /* Lighter grey for hover effect */
+    text-decoration: none; /* Ensures no underline appears on hover */
+}
+
+/* Base styles */
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 28px 20px;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 3px auto;
+    transition: 0.3s ease;
 }
 
 /* Additional styles for the active link or on hover can be added here */
 
-
-section {
-    padding: 20px;
-}
 
 footer {
     background-color: #333;
@@ -170,6 +202,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Ensure the body fills the viewport */
 
 
 nav ul li a.active {
@@ -187,7 +220,7 @@ html {
     nav ul li {
         display: block;
         text-align: center;
-        margin: 10px 0;
+        
     }
     /* Add more responsive styles as needed */
     footer {
@@ -196,18 +229,26 @@ html {
 }
 /* Example media query for smaller screens */
 @media only screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens here */
-    .intro-content {
-        flex-direction: column; /* Stack content vertically on smaller screens */
-        align-items: center; /* Center content horizontally */
+    .nav-list {
+        display: none;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #fff;
+        flex-direction: column;
     }
-    .intro-text, .intro-photo {
-        width: 100%; /* Make intro text and photo full width on smaller screens */
-        text-align: center; /* Center text within its container */
-    }
-    /* Add more responsive styles as needed */
-}
 
+    .nav-list li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
 
 nav ul li a:hover, nav ul li a:focus {
     color: #ccc; /* Lighten the link color on hover/focus */
@@ -385,34 +426,77 @@ nav ul li a:hover, nav ul li a:focus {
   }
     
 
-/* Add this to your style.css */
-@keyframes fadeInLeft {
-    from {
-      opacity: 1;
-      transform: translate3d(-100%, 0, 0);
+  #education {
+    background-color: #fdf0f1; /* Light grey background for the section */
+    padding: 40px 0; /* Top and bottom padding */
+    text-align: center; /* Center-aligns the text */
+    color: #333; /* Dark grey text for readability */
+}
+
+#education h2 {
+    margin-bottom: 20px; /* Space below the section title */
+    color: #222; /* Slightly darker text color for the title */
+}
+
+#education p {
+    margin-bottom: 30px; /* Space below the introductory text */
+    font-style: italic; /* Italicize the quote */
+    color: #555; /* Medium grey text for the quote */
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-around; /* Space between the education items */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    margin: 0 10%; /* Horizontal margins for better spacing */
+}
+
+.education-item {
+    background-color: #ffffff; /* White background for each item */
+    width: 45%; /* Each item takes up 45% of the container width */
+    margin-bottom: 20px; /* Space below each item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    align-items: center; /* Vertically align the contents */
+    padding: 20px; /* Padding inside each item */
+}
+
+.education-item img {
+    width: 150px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-right: 20px; /* Space between the image and the text */
+}
+
+.education-info {
+    text-align: left; /* Align text to the left within the information area */
+}
+
+.education-info h3 {
+    font-size: 1.4rem; /* Font size for the degree title */
+    color: #000; /* Black color for emphasis */
+    margin-bottom: 5px; /* Space below the title */
+}
+
+.education-info p {
+    font-size: 1rem; /* Standard font size for the text */
+    color: #666; /* Grey text for details */
+    margin: 3px 0; /* Vertical margins for spacing between lines */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column; /* Stack the education items vertically on small screens */
     }
-    to {
-      opacity: 1;
-      transform: none;
+
+    .education-item {
+        width: 100%; /* Full width on small screens */
     }
-  }
-  
-  @keyframes fadeInRight {
-    from {
-      opacity: 1;
-      transform: translate3d(100%, 0, 0);
+
+    .education-item img {
+        width: 100px; /* Smaller images on smaller screens */
+        height: auto; /* Maintain aspect ratio */
     }
-    to {
-      opacity: 1;
-      transform: none;
-    }
-  }
-  
-  .intro-text {
-    animation: fadeInLeft 1s ease-out forwards;
-  }
-  
-  .intro-photo {
-    animation: fadeInRight 1s ease-out forwards;
-  }
-  
+}
