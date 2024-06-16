@@ -8,15 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-document.getElementById('mobile-menu').addEventListener('click', function() {
-    var navList = document.querySelector('.nav-list');
-    if (navList.style.display === "f
-    lex") {
-        navList.style.display = "none";
-    } else {
-        navList.style.display = "flex";
-    }
-});
+
 
 
 // Basic form validation and submission feedback
